@@ -1,0 +1,52 @@
+# General Ignored Files
+.DS_Store
+Thumbs.db
+PRD.md
+.env
+.env.local
+.vscode/
+.idea/
+*.log
+*.sqlite3
+*.db
+!*.keep # If you have empty directories you want to keep, add a .keep file and this exception
+
+# Python specific ignores
+# Virtual environment
+.venv/
+env/
+venv/
+# Byte-code files
+__pycache__/
+*.py[cod]
+# IDE specific (already covered by .vscode, .idea, but good to be explicit)
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Node.js / Next.js specific ignores (within 'frontend' directory)
+/frontend/node_modules
+/frontend/.next/
+/frontend/out/
+/frontend/dist/
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.env.local # Keep this specific, as .env is already ignored
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/.pnp.js
+/frontend/.pnp.cjs
+/frontend/PRD.md
+/.pnp/
+.pnp.js
+.pnp.cjs
+
+# Backend specific ignores (within 'backend' directory)
+# If your MongoDB data directory is *inside* backend, add it here, e.g.:
+#/backend/data/db/ # Example: if MongoDB stores data here
+
+# Logs from backend (if not handled by *.log)
+/backend/logs/
